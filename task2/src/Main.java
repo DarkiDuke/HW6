@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -18,17 +19,15 @@ public class Main {
         double smallest = 0;
         //todo дописать логику программы ниже.
 
-
-
-
-
-
+        double[] weights = new double[]{first, second, third};
+        Arrays.sort(weights);
+        System.out.println(Arrays.toString(weights));
 
         //todo
 
 
-        System.out.println("Наибольший вес: " + 10);
-        System.out.println("Средний вес: " + 9);
-        System.out.println("Наименьший вес: " + 1);
+        System.out.println("Наибольший вес: " + weights[2]);
+        System.out.println("Средний вес: " + weights[1]);
+        System.out.println("Наименьший вес: " + weights[0]);
     }
 }
